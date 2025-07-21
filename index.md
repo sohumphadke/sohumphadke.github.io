@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Sohum’s Bio + AI Journal</title>
+  <title>Sohum Phadke</title>
   <style>
     body {
       font-family: Georgia, serif;
@@ -24,8 +24,8 @@
 </head>
 <body>
 
-  <h1>Sohum’s Bio + AI Journal</h1>
-  <p>This is a log of what I'm learning. No fluff, no fancy graphics. Just experiments, papers, and ideas.</p>
+  <h1>Sohum Phadke</h1>
+  <p> hi, i’m sohum — bioengineering & eecs @ uc berkeley. this is my running log: what i’m learning, what i’m building, and what breaks along the way.</p>
 
   <h2>🧪 July 2025</h2>
   <ul>
