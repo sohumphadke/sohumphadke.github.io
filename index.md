@@ -1,28 +1,3 @@
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Sohum Phadke</title>
-  <style>
-    body {
-      font-family: Georgia, serif;
-      max-width: 650px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #111;
-      background: #fff;
-    }
-    h1, h2 {
-      border-bottom: 1px solid #eee;
-      padding-bottom: 0.3em;
-    }
-    a {
-      color: black;
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-
   <h1>Sohum Phadke</h1>
   <p> hi, i’m sohum — bioengineering & eecs @ uc berkeley. this is my running log: what i’m learning, what i’m building, and what breaks along the way.</p>
 
