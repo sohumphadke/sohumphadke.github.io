@@ -20,6 +20,18 @@
       color: black;
       text-decoration: underline;
     }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
   </style>
 </head>
 <body>
@@ -29,14 +41,24 @@
 
   <h2>🧪 July 2025</h2>
   <ul>
-    <li><strong>07/21</strong> – Got GitHub Pages working. Switching to raw HTML. Theme: None.</li>
-    <li><strong>07/20</strong> – Working on protein-ribosome reassociation protocols. Mg²⁺ tuning.</li>
+    <li><strong>07/23</strong> – Got GitHub Pages working. Switching to raw HTML. Theme: None.</li>
   </ul>
 
   <h2>📚 Reading</h2>
   <ul>
     <li><a href="https://arxiv.org/abs/2305.XXXX" target="_blank">Transformer models in RNA folding</a></li>
     <li><a href="https://pubmed.ncbi.nlm.nih.gov/XXXXXXX/" target="_blank">Ribosome collisions and cell response</a></li>
+  </ul>
+
+  <h2>🧠 Linear Classifiers</h2>
+  <p>A linear classifier separates data into two categories using a straight line (or hyperplane in higher dimensions). It computes a dot product between the input vector and a learned weight vector to determine which side of the boundary the point falls on.</p>
+  
+  <ul>
+    <li><strong>Key equation:</strong> <code>ŷ = sign(w · x + b)</code></li>
+    <li><strong>Geometric intuition:</strong> The dot product tells us how aligned a data point is with the weight vector. Positive → same direction → classify as +1. Negative → opposite → classify as -1.</li>
+    <li><strong>Decision boundary:</strong> All points where <code>w · x + b = 0</code></li>
+    <li><strong>Why dot product?</strong> It measures alignment. It’s fast and lets us slice the space with a line.</li>
+    <li><strong>Only works well when data is (close to) linearly separable.</strong></li>
   </ul>
 
 </body>
