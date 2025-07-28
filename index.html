@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <title>Sohum Phadke</title>
   <style>
+    /* Hide the default cursor completely */
+    html, body {
+      cursor: none;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: Georgia, serif;
       max-width: 650px;
@@ -11,19 +18,19 @@
       padding: 0 20px;
       color: #111;
       background: #fff;
-      cursor: none; /* Hide default cursor */
+      position: relative;
     }
 
     .circle-cursor {
       position: fixed;
-      width: 16px;
-      height: 16px;
-      border: 2px solid black;
+      width: 18px;
+      height: 18px;
+      background-color: rgba(0, 120, 255, 0.8); /* opaque blue */
       border-radius: 50%;
       pointer-events: none;
       z-index: 9999;
       transform: translate(-50%, -50%);
-      transition: transform 0.05s ease;
+      transition: transform 0.01s linear;
     }
 
     h1, h2 {
