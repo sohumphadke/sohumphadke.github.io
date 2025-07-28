@@ -11,21 +11,38 @@
       padding: 0 20px;
       color: #111;
       background: #fff;
+      cursor: none; /* Hide default cursor */
     }
+
+    .circle-cursor {
+      position: fixed;
+      width: 16px;
+      height: 16px;
+      border: 2px solid black;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.05s ease;
+    }
+
     h1, h2 {
       border-bottom: 1px solid #eee;
       padding-bottom: 0.3em;
     }
+
     a {
       color: black;
       text-decoration: underline;
     }
+
     code {
       background-color: #f4f4f4;
       padding: 2px 4px;
       border-radius: 4px;
       font-family: Consolas, monospace;
     }
+
     pre {
       background-color: #f4f4f4;
       padding: 10px;
@@ -60,6 +77,16 @@
     <li><strong>Why dot product?</strong> It measures alignment. It’s fast and lets us slice the space with a line.</li>
     <li><strong>Only works well when data is (close to) linearly separable.</strong></li>
   </ul>
+
+  <div class="circle-cursor" id="cursor"></div>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+  </script>
 
 </body>
 </html>
