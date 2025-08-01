@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Sohum Phadke</title>
   <style>
-    /* Hide the default cursor completely */
     html, body {
       cursor: none;
       margin: 0;
@@ -18,14 +17,13 @@
       padding: 0 20px;
       color: #111;
       background: #fff;
-      position: relative;
     }
 
     .circle-cursor {
       position: fixed;
       width: 18px;
       height: 18px;
-      background-color: rgba(0, 120, 255, 0.8); /* opaque blue */
+      background-color: rgba(0, 120, 255, 0.8);
       border-radius: 50%;
       pointer-events: none;
       z-index: 9999;
@@ -36,6 +34,7 @@
     h1, h2 {
       border-bottom: 1px solid #eee;
       padding-bottom: 0.3em;
+      margin-top: 2em;
     }
 
     a {
@@ -49,32 +48,19 @@
       border-radius: 4px;
       font-family: Consolas, monospace;
     }
-
-    pre {
-      background-color: #f4f4f4;
-      padding: 10px;
-      border-radius: 4px;
-      overflow-x: auto;
-    }
   </style>
 </head>
 <body>
 
   <h1>Sohum Phadke</h1>
-  <p>hi, i’m sohum — bioengineering & EECS @ UC Berkeley. this is my running log: what i’m learning, what i’m building, and what breaks along the way.</p>
+  <p>Bioengineering & EECS @ UC Berkeley. I’m building at the intersection of computation and biology — this is a living log of concepts I’m learning, tools I’m prototyping, and systems I’m breaking.</p>
 
-  <h2>🧪 July 2025</h2>
-
-  <h2>🧠 Linear Classifiers</h2>
-  <p>A linear classifier separates data into two categories using a straight line (or hyperplane in higher dimensions). It computes a dot product between the input vector and a learned weight vector to determine which side of the boundary the point falls on.</p>
-  
-  <ul>
-    <li><strong>Key equation:</strong> <code>ŷ = sign(w · x + b)</code></li>
-    <li><strong>Geometric intuition:</strong> The dot product tells us how aligned a data point is with the weight vector. Positive → same direction → classify as +1. Negative → opposite → classify as -1.</li>
-    <li><strong>Decision boundary:</strong> All points where <code>w · x + b = 0</code></li>
-    <li><strong>Why dot product?</strong> It measures alignment. It’s fast and lets us slice the space with a line.</li>
-    <li><strong>Only works well when data is (close to) linearly separable.</strong></li>
-  </ul>
+  <h2>🧪 July 2025 – Linear Classifiers</h2>
+  <p>
+    Explored linear classifiers and the perceptron algorithm for binary classification. Focused on geometric intuition behind dot products and hyperplane separation. Trained models on synthetic datasets and visualized decision boundaries to understand convergence and margin behavior.
+  </p>
+  <p><code>ŷ = sign(w · x + b)</code></p>
+  <p>Currently applying this to a real-time posture recognition system (coming soon).</p>
 
   <div class="circle-cursor" id="cursor"></div>
 
